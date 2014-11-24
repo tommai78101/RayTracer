@@ -168,19 +168,33 @@ Color getColorAt(Vector3D position, Vector3D direction, std::vector<Object*> sce
 	Vector3D winningObjectNormal = sceneObjects.at(indexWinningObject)->getNormalAt(position);
 
 	//Adding checkerboard to the plane.
+	//if ((int)(winningObjectColor.getSpectral()) == 2){
+	//	int square = (int) std::floor(position.getX()) + (int) std::floor(position.getZ());
+	//	if ((square % 2) == 0){
+	//		//Black tile.
+	//		winningObjectColor.setRed(0.0); 
+	//		winningObjectColor.setGreen(0.0);
+	//		winningObjectColor.setBlue(0.0);
+	//	}
+	//	else {
+	//		//White tile.
+	//		winningObjectColor.setRed(1.0); 
+	//		winningObjectColor.setGreen(1.0);
+	//		winningObjectColor.setBlue(1.0);
+	//	}
+	//}
+
+	//Adding anything else other than checkerboard.
+	static int colorBit = 1;
 	if ((int)(winningObjectColor.getSpectral()) == 2){
 		int square = (int) std::floor(position.getX()) + (int) std::floor(position.getZ());
-		if ((square % 2) == 0){
-			//Black tile.
-			winningObjectColor.setRed(0.0); 
-			winningObjectColor.setGreen(0.0);
-			winningObjectColor.setBlue(0.0);
-		}
-		else {
-			//White tile.
-			winningObjectColor.setRed(1.0); 
-			winningObjectColor.setGreen(1.0);
-			winningObjectColor.setBlue(1.0);
+		if ((square % 3) == 0){
+			winningObjectColor.setRed(colorBit <<= 1);
+			winningObjectColor.setGreen(colorBit <<= 1);
+			winningObjectColor.setBlue(colorBit <<= 1);
+			if ((colorBit & 0xFF) == 0){
+				colorBit |= 0x1;
+			}
 		}
 	}
 
