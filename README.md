@@ -2,11 +2,11 @@
 
 ![Raw Content](http://i.imgur.com/c61Pfsc.png)
 
-A side project I did to understand about lighting and shadows.
+A side project I did to understand about lighting and shadows. 
 
 As noted, raytracer works by emitting rays the size of (width) x (height) of the photo, reflecting the rays if they hit a surface, and determining the colors of the surface if the rays hit the light source.
 
-In this case, the image is 320x240, therefore the raytracer emits a total of 76800 rays onto the frustum. All surfaces that is hit by the 76800 rays emitted from the camera view will reflect accordingly. This is calculated by obtaining the normal vector of the surface, followed by finding the reflected vector of the light using the following algorithm:
+In this case, the image shown above is 320x240 (image is magnified for clarity), therefore the raytracer emits a total of 76800 rays onto the frustum. All surfaces that are hit by the 76800 rays emitted from the camera view will reflect accordingly. This is calculated by obtaining the normal vector of the surface, followed by finding the reflected vector of the light using the following algorithm:
 
 ![Algorithm](http://i.imgur.com/QkFjfZS.png)
 

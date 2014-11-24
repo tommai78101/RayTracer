@@ -1,4 +1,4 @@
-﻿Build started 11/24/2014 1:05:11 AM.
+﻿Build started 11/24/2014 2:27:51 AM.
      1>Project "C:\Users\Thompson\Documents\Visual Studio 2010\Projects\Raytracer\Raytracer\Raytracer.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\Raytracer.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -27,4 +27,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.10
+Time Elapsed 00:00:03.86
