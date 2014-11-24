@@ -314,7 +314,7 @@ void fillBackgroundColor(RGBType* pixels, int w, int h, int r, int g, int b, Cam
 	double xAmount, yAmount;
 
 	//Anti-aliasing depth.
-	const int antiAliasingDepth = 6;
+	const int antiAliasingDepth = 2;
 	double antiAliasingThreshold = 0.1;
 	int aaIndex = 0;
 	for (int y = 0; y<h; y++){
@@ -464,6 +464,7 @@ int main(int argCount, char* argValues[]){
 	Color maroon(0.5, 0.25, 0.25, 0.6);
 	Color metal(0.7, 0.7, 0.85, 0.9);
 	Color gray(0.5, 0.5, 0.5, 0.0);
+	Color skyBlue(0.6, 0.6, 0.9, 0.2);
 	Color black(0.0, 0.0, 0.0, 0.0);
 
 	Vector3D lightPosition(-7.0,10,-10.0);
@@ -471,13 +472,13 @@ int main(int argCount, char* argValues[]){
 	std::vector<Source*> lightSources;
 	lightSources.push_back(dynamic_cast<Source*>(&sceneLight));
 
-	double ambientLight = 0.2;
+	double ambientLight = 0.3;
 	double accuracy = 0.00001;
 
 	//Scene objects.
 	Sphere sceneSphere(origin, 1, prettyGreen);
 	Sphere sceneSphere2(Vector3D(-3.0, 0.0, 0.0), 1, metal);
-	Sphere sceneSphere3(Vector3D(1.5, 0.0, 2.0), 1, maroon);
+	Sphere sceneSphere3(Vector3D(1.5, 0.0, 2.0), 1, skyBlue);
 	Plane scenePlane(Y_axis, -1.0, checkerboard);
 
 	std::vector<Object*> sceneObjects;
