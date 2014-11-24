@@ -184,6 +184,12 @@ Color getColorAt(Vector3D position, Vector3D direction, std::vector<Object*> sce
 	//	}
 	//}
 
+	//-------------------------------------------------------------------------------------------------------------------------------
+	//WWWALSJAL:KSJL:ASKJL:AKSJA:LSKJAL:SKJASL:KJRFIWOUReopyiqfy ashO;WEIFU OAIFLAKSHFAKLFAWOEIGUKDGHKALSFHLAWEIYROPIQERYPOWQGHIFDJGH
+	//                      This is used only to mark where the anti-aliasing generation code is at.
+	//WWWALSJAL:KSJL:ASKJL:AKSJA:LSKJAL:SKJASL:KJRFIWOUReopyiqfy ashO;WEIFU OAIFLAKSHFAKLFAWOEIGUKDGHKALSFHLAWEIYROPIQERYPOWQGHIFDJGH
+	//-------------------------------------------------------------------------------------------------------------------------------
+
 	//Adding anything else other than checkerboard.
 	static int colorBit = 1;
 	if ((int)(winningObjectColor.getSpectral()) == 2){
