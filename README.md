@@ -26,6 +26,6 @@ Rays with two or more intersections (and no reflections) will emit a shadow, or 
 
 The end result will give an illusion of showing objects with a reflective surface and shadows.
 
-Credits:
+### Credits:
 
 [Caleb Piercy - Raytracer C++ Tutorial](https://www.youtube.com/watch?v=k_aRiYSXcyo)
