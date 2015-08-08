@@ -2,7 +2,7 @@
 
 ![Raw Content](http://i.imgur.com/c61Pfsc.png)
 
-A side project I did to understand about lighting and shadows. 
+A side project I learned from Caleb Piercy to understand about lighting and shadows. 
 
 As noted, raytracer works by emitting rays the size of (width) x (height) of the photo, reflecting the rays if they hit a surface, and determining the colors of the surface if the rays hit the light source.
 
@@ -25,3 +25,7 @@ Rays with multiple reflections will have the Nth intersection color be mapped on
 Rays with two or more intersections (and no reflections) will emit a shadow, or a darker hue color of the surface, starting from the 3rd intersection. There will be no light reflected after the 4th intersection.
 
 The end result will give an illusion of showing objects with a reflective surface and shadows.
+
+Credits:
+
+[Caleb Piercy - Raytracer C++ Tutorial](https://www.youtube.com/watch?v=k_aRiYSXcyo)
